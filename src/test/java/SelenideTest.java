@@ -22,6 +22,6 @@ public class SelenideTest {
 
         $(linkText("qa-guru/niffler")).click();
         $("#issues-tab").click();
-        $(withText("#74")).should(Condition.exist);
+        $(withText("[BUG] Пользователь может добавить категорию трат без названия")).should(Condition.exist);
     }
 }

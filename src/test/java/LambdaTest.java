@@ -30,7 +30,7 @@ public class LambdaTest {
             $("#issues-tab").click();
         });
         step("Проверяем наличие Issue с номером " + TestData.ISSUE, () -> {
-            $(withText("#" + TestData.ISSUE)).should(Condition.exist);
+            $(withText(TestData.ISSUE)).should(Condition.exist);
         });
     }
 }

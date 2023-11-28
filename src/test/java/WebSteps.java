@@ -34,9 +34,9 @@ public class WebSteps {
         $("#issues-tab").click();
     }
 
-    @Step("Проверяем наличие Issue с номером {issue}")
-    public void shouldSeeIssueWithNumber(int issue) {
-        $(withText("#" + issue)).should(Condition.exist);
+    @Step("Проверяем наличие Issue с названием {issue}")
+    public void shouldSeeIssueWithNumber(String issue) {
+        $(withText(issue)).should(Condition.exist);
     }
 
     @Attachment(value = "Screenshot", type = "image/png", fileExtension = "png")
