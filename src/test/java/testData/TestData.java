@@ -1,3 +1,5 @@
+package testData;
+
 public class TestData {
 
     public static final String REPOSITORY = "qa-guru/niffler";
